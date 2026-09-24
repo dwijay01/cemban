@@ -30,14 +30,14 @@ const menuItems: MenuItem[] = [
     name: 'Es Jeruk Segar',
     price: 10000,
     description: 'Perasan jeruk asli murni manis dan menyegarkan.',
-    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Es_Jeruk_Barokah.jpg',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Glass_of_Fresh_Orange_Juice.jpg',
   },
   {
     id: '4',
     name: 'Dimsum Ayam',
     price: 10000,
     description: '4 pcs dimsum ayam gurih dengan saus asam manis pedas.',
-    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dim_sum.jpg',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Siu_Mai.jpg',
   }
 ];
 

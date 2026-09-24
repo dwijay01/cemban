@@ -16,28 +16,28 @@ const menuItems: MenuItem[] = [
     name: 'Nasi Ayam Geprek',
     price: 10000,
     description: 'Nasi hangat dengan ayam geprek sambal bawang super pedas.',
-    imageUrl: 'https://images.unsplash.com/photo-1626082896492-766af4eb65ed?auto=format&fit=crop&q=80&w=600',
+    imageUrl: 'https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/3bd9f8bc-39e8-4eed-9757-91b998a1ed75_Go-Biz_20210831_224901.jpeg',
   },
   {
     id: '2',
     name: 'Mie Goreng Spesial',
     price: 10000,
     description: 'Mie goreng bumbu rempah dengan telur dan sayuran segar.',
-    imageUrl: 'https://images.unsplash.com/photo-1612929633738-8fe01f72810c?auto=format&fit=crop&q=80&w=600',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mie_goreng_spesial.jpg',
   },
   {
     id: '3',
     name: 'Es Jeruk Segar',
     price: 10000,
     description: 'Perasan jeruk asli murni manis dan menyegarkan.',
-    imageUrl: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=600',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Es_Jeruk_Barokah.jpg',
   },
   {
     id: '4',
     name: 'Dimsum Ayam',
     price: 10000,
     description: '4 pcs dimsum ayam gurih dengan saus asam manis pedas.',
-    imageUrl: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&q=80&w=600',
+    imageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Dim_sum.jpg',
   }
 ];
 

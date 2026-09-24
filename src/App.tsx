@@ -92,30 +92,30 @@ export default function App() {
             <span className="h-px w-12 bg-orange-300"></span>
           </div>
 
-          {/* Grid Layout: 1 column on mobile, 2 columns on tablet/desktop */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Grid Layout: 2 columns everywhere, responsive padding/text */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
             {menuItems.map((item) => (
               <div key={item.id} className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-lg transition-shadow border border-orange-100">
-                <div className="h-48 overflow-hidden relative">
+                <div className="h-32 sm:h-48 overflow-hidden relative">
                   <img 
                     src={item.imageUrl} 
                     alt={item.name} 
                     className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute top-3 right-3 bg-green-500 text-white font-bold py-1 px-3 rounded-full shadow-md text-sm">
+                  <div className="absolute top-2 right-2 sm:top-3 sm:right-3 bg-green-500 text-white font-bold py-1 px-2 sm:px-3 rounded-full shadow-md text-xs sm:text-sm">
                     {formatRupiah(item.price)}
                   </div>
                 </div>
-                <div className="p-5 flex-1 flex flex-col">
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">{item.name}</h3>
-                  <p className="text-gray-600 text-sm mb-5 flex-1 line-clamp-2">{item.description}</p>
+                <div className="p-3 sm:p-5 flex-1 flex flex-col">
+                  <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 text-gray-800 line-clamp-1 sm:line-clamp-none">{item.name}</h3>
+                  <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-5 flex-1 line-clamp-2">{item.description}</p>
                   <button 
                     onClick={() => handleOrder(item.name)}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors active:scale-95 shadow-sm"
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 sm:py-3 px-2 sm:px-4 rounded-lg flex items-center justify-center gap-1 sm:gap-2 transition-colors active:scale-95 shadow-sm text-xs sm:text-base"
                   >
-                    <ShoppingBag size={20} />
-                    PESAN VIA WHATSAPP
+                    <ShoppingBag size={16} className="sm:w-5 sm:h-5" />
+                    <span>Pesan <span className="hidden sm:inline">via WA</span></span>
                   </button>
                 </div>
               </div>
